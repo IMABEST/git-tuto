@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* This is so cool*/
+       p {
+         font-family: Roboto, Arial;
+         margin-top: 0;
+         margin-bottom: 0;
+       }
+       .videopreview,
+       .videopreview01,
+       .videopreview02,
+       .videopreview03,
+       .videopreview04,
+       .videopreview05 {
+       }
+
+       .oneimage {
+         width: 100%;
+       }
+       .oneimage01 {
+         width: 100%;
+       }
+       .oneimage02 {
+         width: 100%;
+       }
+       .oneimage03 {
+         width: 100%;
+       }
+       .oneimage04 {
+         width: 100%;
+       }
+       .oneimage05 {
+         width: 100%;
+       }
+       .tooimage {
+         border-radius: 30px;
+         width: 36px;
+       }
+       .tooimage01 {
+         border-radius: 30px;
+         width: 36px;
+       }
+       .tooimage02 {
+         border-radius: 30px;
+         width: 36px;
+       }
+       .tooimage03 {
+         border-radius: 30px;
+         width: 36px;
+       }
+       .tooimage04 {
+         border-radius: 30px;
+         width: 36px;
+       }
+       .tooimage05 {
+         border-radius: 30px;
+         width: 36px;
+       }
+
+       .tecguy {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px;
+       }
+       .tecguy01 {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px
+       }
+       .tecguy02 {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px
+       }
+       .tecguy03 {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px
+       }
+       .tecguy04 {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px
+       }
+       .tecguy05 {
+         margin-top: 0;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 20px;
+         margin-bottom: 10px
+       }
+
+       .auto-name,
+       .auto-name01,
+       .likendviews01,
+       .auto-name02,
+       .auto-name03,
+       .auto-name04,
+       .auto-name05,
+       .ikendviews,
+       .ikendviews02,
+       .ikendviews03,
+       .ikendviews04,
+       .ikendviews05 {
+         font-size: 12px;
+         color: rgb(96, 96, 96);
+       }
+       .auto-name {
+         margin-bottom: 5px;
+       }
+       .auto-name01 {
+         margin-bottom: 5px;
+       }
+       .auto-name02 {
+         margin-bottom: 5px;
+       }
+       .auto-name03 {
+         margin-bottom: 5px;
+       }
+       .auto-name04 {
+         margin-bottom: 5px;
+       }
+       .auto-name05 {
+         margin-bottom: 5px;
+       }
+       .likendviews01 {
+       }
+       .likendviews02 {
+       }
+       .likendviews03 {
+       }
+       .likendviews04 {
+       }
+       .likendviews05 {
+       }
+       .video-info-grid {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .video-info-grid01 {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .video-info-grid02 {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .video-info-grid03 {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .video-info-grid04 {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .video-info-grid05 {
+         display: grid;
+         grid-template-columns: 50px 1fr;
+       }
+       .chan-ima-edit {
+         background-color: blue;
+       }
+       .chan-ima-edit01 {
+         background-color: red;
+       }
+       .chan-ima-edit02 {
+         background-color: red;
+       }
+       .chan-ima-edit03 {
+         background-color: blue;
+       }
+       .chan-ima-edit04 {
+         background-color: red;
+       }
+       .chan-ima-edit05 {
+         background-color: blue;
+       }
+       .chan-gift-edit {
+         background-color: blue;
+       }
+       .chan-gift-edit01 {
+         background-color: red;
+       }
+       .chan-gift-edit02 {
+         background-color: blue;
+       }
+       .chan-gift-edit03 {
+         background-color: red;
+       }
+       .chan-gift-edit04 {
+         background-color: blue;
+       }
+       .chan-gift-edit05 {
+         background-color: red;
+       }
+       .thumbnail-row {
+         margin-bottom: 8px;
+         position: relative;
+       }
+       .thumbnail-row01 {
+         margin-bottom: 8px;
+         position: relative;
+       }
+       .thumbnail-row02 {
+         margin-bottom: 8px;
+         position: relative;
+       }
+       .thumbnail-row03 {
+         margin-bottom: 8px;
+         position: relative;
+       }
+       .thumbnail-row04 {
+         margin-bottom: 8px;
+         position: relative;
+       }
+       .thumbnail-row05 {
+         margin-bottom: 8px
+         position: relative;
+       }
+
+       .videeo-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         column-gap: 16px;
+         row-gap: 40px;
+         padding-left: 45px;
+         padding-top: 50px;
+
+       }
+       @media (max-width: 750px ) {
+        .videeo-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+       }
+       @media (min-width: 751px ) and (max-width: 999px) {
+        .videeo-grid {
+           grid-template-columns: 1fr 1fr 1fr;
+        }
+       }
+       @mediab (min-width: 1000px) {
+        .videeo-grid {
+          grid-template-columns: 1fr 1fr 1fr 1fr
+        }
+       }
+       .body {
+        font-family: Roboto, arial;
+         margin: 0;
+         padding-top: 80px;
+         padding-left: 96px;
+         padding-right: 24px;
+         background-color: rgb(247, 241, 241);
+       }
+       .header {
+         height: 55px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background-color: white;
+         border-bottom-width: 1px;
+         border-bottom-style: solid;
+         border-bottom-color: rgb (228, 228, 228);
+         z-index: 100;
+       }
+       .left-section {
+         align-items: center;
+         display: flex;
+       }
+       .midde-section {
+         flex: 1;
+         margin-left: 70px;
+         margin-right: 35px;
+         max-width: 500px;
+         display: flex;
+         align-items: center;
+       }
+
+       .right-section {
+         margin-right: 20px;
+         width: 180px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         flex-shrink: 0;
+       }
+       .ham-mean {
+         height: 25px;
+         margin-left: 24px;
+         margin-right: 24px;
+       }
+       .you-mean {
+         height: 20px;
+       }
+       .search-button {
+         height: 40px;
+         width: 66px;
+         background-color: rgb(240, 239, 239);
+         border-width: 1px;
+         border-style: solid;
+         border-color: rgb(190, 188, 188);
+         margin-left: -1px;
+         margin-right: 9px;
+         position: relative;
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .search-button .tooltip {
+         position: absolute;
+         background-color: grey;
+         color: white;
+         padding-top: 4px;
+         padding-bottom: 4px;
+         padding-left: 8px;
+         padding-right: 8px;
+         border-radius: 2px;
+         font-size: 12px;
+         bottom: -30;
+         opacity: 0;
+         transition: opacity 0.15s;
+         pointer-events: none;
+         font-family: Roboto, arial;
+       }
+      .search-button:hover .tooltip {
+         opacity: 1;}
+
+
+
+
+
+
+       .voice-search-button {
+         height: 40px;
+         width: 40px;
+         border-radius: 20px;
+         border: none;
+         background-color: rgb(245, 244, 244);
+         position: relative;
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .voice-search-button .tooltip {
+                  position: absolute;
+                  background-color: grey;
+                  color: white;
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  border-radius: 2px;
+                  font-size: 12px;
+                  bottom: -30;
+                   opacity: 0;
+                    transition: opacity 0.15s;
+                  pointer-events: none;
+                  white-space: nowrap;
+                  font-family: Roboto, arial;
+
+                  }
+      .voice-search-button:hover .tooltip {
+        opacity: 1;
+
+      }
+      .upload-icon-contanier {
+         position: relative;
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .upload-icon-contanier .tooltip {
+                  position: absolute;
+                  background-color: grey;
+                  color: white;
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  border-radius: 2px;
+                  font-size: 12px;
+                  bottom: -30;
+                   opacity: 0;
+                    transition: opacity 0.15s;
+                  pointer-events: none;
+                  white-space: nowrap;
+                font-family: Roboto, arial; }
+
+
+
+      .upload-icon-contanier:hover .tooltip {
+        opacity: 1; }
+
+
+        .Youtube-app-icon-contanier {
+           position: relative;
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        .Youtube-app-icon-contanier .tooltip {
+          position: absolute;
+                  background-color: grey;
+                  color: white;
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  border-radius: 2px;
+                  font-size: 12px;
+                  bottom: -30;
+                   opacity: 0;
+                    transition: opacity 0.15s;
+                  pointer-events: none;
+                  white-space: nowrap;
+                  font-family: Roboto, arial;
+        }
+        .Youtube-app-icon-contanier:hover .tooltip {
+          opacity: 1;
+        }
+
+
+
+       .search-bar {
+         flex: 1;
+         height: 36px;
+         padding-left: 10px;
+         font-size: 16px;
+
+         border-radius: 2px;
+         border: 1px solid rgb(190, 188, 188) ;
+         box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+         width: 0;
+       }
+       .search-bar::placeholder {
+         font-family: Roboto, Arial;
+         font-size: 16px;
+       }
+       .search-icons {
+         height: 25px;
+
+       }
+       .voice-icon {
+         height: 24px;
+
+       }
+       .upload-icons {
+         height: 24px;
+       }
+       .youtube-apps-icons {
+         height: 24px;
+       }
+       .notifications-icons {
+         height: 24px;
+       }
+       .current-user-picture {
+         height: 32px;
+         border-radius: 16px;
+       }
+       .side-bar {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         top: 55px;
+         z-index: 200;
+         width: 50px;
+         padding-top: 5px;
+       }
+       .video-time {
+
+         font-size: 12px;
+         font-weight: 500;
+         padding: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+
+       }
+       .video-time01 {
+
+         font-size: 12px;
+         font-weight: 500;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-bottom: 4px;
+         padding-top: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+       }
+       .video-time02 {
+
+         font-size: 12px;
+         font-weight: 500;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-bottom: 4px;
+         padding-top: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+       }
+       .video-time03 {
+         font-family: Roboto, arial;
+         font-size: 12px;
+         font-weight: 500;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-bottom: 4px;
+         padding-top: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+       }
+       .video-time04 {
+
+         font-size: 12px;
+         font-weight: 500;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-bottom: 4px;
+         padding-top: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+       }
+       .video-time05 {
+
+         font-size: 12px;
+         font-weight: 500;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-bottom: 4px;
+         padding-top: 4px;
+         border-radius: 2px;
+         background-color: black;
+         color: white;
+         position: absolute;
+         bottom: 8px;
+         right: 5px;
+       }
+       .notifications-icons-contanier {
+         position: relative;
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .notifications-icons-contanier .tooltip {
+          position: absolute;
+                  background-color: grey;
+                  color: white;
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  padding-left: 8px;
+                  padding-right: 8px;
+                  border-radius: 2px;
+                  font-size: 12px;
+                  bottom: -30;
+                   opacity: 0;
+                    transition: opacity 0.15s;
+                  pointer-events: none;
+                  white-space: nowrap;
+                  font-family: Roboto, arial;
+        }
+        .notifications-icons-contanier:hover .tooltip {
+          opacity: 1;
+        }
+       .notifications-count {
+         position: absolute;
+         top: -2px;
+         right: -2px;
+         background-color: rgb(200, 0, 0);
+         color: white;
+         font-family: Roboto, arial;
+         font-size: 11px;
+         padding-left: 4px;
+         padding-right: 4px;
+         padding-top: 2px;
+         padding-bottom: 2px;
+         border-radius: 10px;
+       }
+       .sidebar-link {
+         height: 74px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         cursor: pointer;
+       }
+       .sidebar-link:hover {
+         background-color: rgb(236, 234, 234);
+       }
+       .sidebar-link img {
+         height: 24px;
+         margin-bottom: 4px;
+       }
+       .sidebar-link div {
+         font-family: Roboto, arial;
+         font-size: 9px;
+       }
+    </style>
+  </head>
+  <body>
+    <!-- This is so cool-->
+    <header class="header">
+      <div class="left-section">
+        <img class="ham-mean" src="icons/hamburger-menu.svg" />
+        <img class="you-mean" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="midde-section">
+        <input class="search-bar" type="text" placeholder="search here" />
+        <button class="search-button">
+          <img class="search-icons" src="icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-icon" src="icons/voice-search-icon.svg" alt="" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-contanier">
+          <img class="upload-icons" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="Youtube-app-icon-contanier">
+          <img class="youtube-apps-icons" src="icons/youtube-apps.svg" />
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        <div class="notifications-icons-contanier">
+          <img class="notifications-icons" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+
+        <img class="current-user-picture" src="my-channelss.jpeg" />
+      </div>
+    </header>
+
+    <nav class="side-bar">
+      <div class="sidebar-link">
+        <img src="homepage.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="subscriptions.svg" />
+        <div>Subscription</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-music.svg" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="videeo-grid">
+        <div class="videopreview">
+          <div class="thumbnail-row">
+            <img class="oneimage" src="iamgeonw.webp" />
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="chan-ima-edit">
+              <img class="tooimage" src="twoimage.jpeg" />
+            </div>
+            <div class="chan-gift-edit">
+              <p class="tecguy">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="auto-name">Marques Brownlee</p>
+              <p class="likendviews">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="videopreview01">
+          <div class="thumbnail-row01">
+            <img class="oneimage01" src="timage.webp" />
+            <div class="video-time01">8:22</div>
+          </div>
+          <div class="video-info-grid01">
+            <div class="chan-ima-edit01">
+              <img class="tooimage01" src="pix2.jpeg.jpeg" />
+            </div>
+            <div class="chan-gift-edit01">
+              <p class="tecguy01">Try Not To Laugh Challenge #9</p>
+              <p class="auto-name01">Markiplier</p>
+              <p class="likendviews01">19M views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="videopreview02">
+          <div class="thumbnail-row02">
+            <img class="oneimage02" src="image3.webp" />
+            <div class="video-time02">9:13</div>
+          </div>
+          <div class="video-info-grid02">
+            <div class="chan-ima-edit02">
+              <img class="tooimage02" src="image4.jpeg" />
+            </div>
+            <div class="chan-gift-edit02">
+              <p class="tecguy02">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+              <p class="auto-name02">SSSniperWolf</p>
+              <p class="likendviews02">12M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="videopreview03">
+          <div class="thumbnail-row03">
+            <img class="oneimage03" src="image5.webp" />
+            <div class="video-time03">22:09</div>
+          </div>
+          <div class="video-info-grid03">
+            <div class="chan-ima-edit03">
+              <img class="tooimage03" src="image6.jpeg" />
+            </div>
+            <div class="chan-gift-edit03">
+              <p class="tecguy03">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </p>
+              <p class="auto-name03">Veritasium</p>
+              <p class="likendviews03">18M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="videopreview04">
+          <div class="thumbnail-row04">
+            <img class="oneimage04" src="image7.webp" />
+            <div class="video-time04">11:17</div>
+          </div>
+          <div class="video-info-grid04">
+            <div class="chan-ima-edit04">
+              <img class="tooimage04" src="image8.jpeg" />
+            </div>
+            <div class="chan-gift-edit04">
+              <p class="tecguy04">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+              <p class="auto-name04">CS Dojo</p>
+              <p class="likendviews04">519K views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="videopreview05">
+          <div class="thumbnail-row05">
+            <img class="oneimage05" src="image9.webp" />
+            <div class="video-time05">19:59</div>
+          </div>
+          <div class="video-info-grid05">
+            <div class="chan-ima-edit05">
+              <img class="tooimage05" src="image10.jpeg" />
+            </div>
+            <div class="chan-gift-edit05">
+              <p class="tecguy05">
+                Anything You Can Fit In The Circle I &#39; ll Pay For
+              </p>
+              <p class="auto-name05">MrBeast</p>
+              <p class="likendviews05">141M views &#183; 1 year ago</p>
+              <p class="likendviews05">141M views &#183; 1 year ago</p>
+              <p class="likendviews05">141M views &#183; 1 year ago</p>
+              <p class="likendviews05">141M views &#183; 1 year ago</p>
+              <p class="likendviews05">141M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
